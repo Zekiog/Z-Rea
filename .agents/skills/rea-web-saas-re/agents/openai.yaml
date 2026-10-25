@@ -1,0 +1,4 @@
+interface:
+  display_name: "REA web SaaS reverse engineering"
+  short_description: "Investigate public SaaS sites with REA Evidence"
+  default_prompt: "Use $rea-web-saas-re to reverse-engineer the named public SaaS web product with REA browser Evidence, preserving observations vs inferences."
