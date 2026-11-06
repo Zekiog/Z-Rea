@@ -2,7 +2,7 @@
 name: reverse-engineer-anything
 description: Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA. Use shipped-artifact or requested runtime evidence to explain features, compare versions, decompile code, or guide a reconstruction. Skip REA for ordinary source-repository architecture analysis.
 metadata:
-  version: "44"
+  version: "45"
 ---
 
 # REA
@@ -105,6 +105,10 @@ explicit path or endpoint and do not need it.
 - .NET NativeAOT PE/ELF: native Ghidra analysis. Native code can yield pseudocode;
   consult the NativeAOT workflow in `references/native-and-artifacts.md` for
   optional metadata recovery and its supported host/layout boundary.
+- Public SaaS marketing/app origin (no local source tree): follow
+  [web SaaS products](references/web-saas-products.md) and, when available, the
+  [`rea-web-saas-re`](../rea-web-saas-re/SKILL.md) workflow skill before claiming
+  stack, API, or vendor identity from a single capture.
 - User-owned browser page already open: `list_browser_targets`.
 - Browser action the agent must perform (click, type, navigate):
   `capture_browser_scenario` with declared actions. See
